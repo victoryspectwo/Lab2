@@ -25,7 +25,7 @@ avg_temp()
 def min_max(float_l1st):
     highest = max(float_l1st)
     lowest = min(float_l1st)
-    print("The highest temperature is " + str(highest) + " deg C and the lowest temperature is " + str(lowest) + "deg C")
+    print("The highest temperature is " + str(highest) + " deg C and the lowest temperature is " + str(lowest) + " deg C")
     return highest, lowest
 
 min_max(float_l1st)
