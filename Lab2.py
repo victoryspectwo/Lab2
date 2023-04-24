@@ -1,3 +1,6 @@
+import statistics
+
+
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
 
@@ -32,29 +35,19 @@ min_max(float_l1st)
 
 #come back and add median temp later
 
+def median(float_l1st):
+    median_val = statistics.median(float_l1st)
+    print("the median temperature is " + str(median_val))
+    return median_val
+
+median(float_l1st)
+
 
 
 
 
 if __name__ == "__main__":
     main()
-    # Printing average of the list
-#print("Average of the list =", round(average, 2))
-
-    #display_mm()
-    #user_input()
-
-    #avg_temp()
-
-
-
-
-
-'''def avg_temp(num_list): #define the variable from outside inside here
-    return sum(num_list)/len(num_list)
-    print("Average of the list =", round(average, 2))'''
-
-#def min_max (min, max):
 
 
 
