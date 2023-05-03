@@ -6,10 +6,19 @@ def calculate_bmi (height, weight):
     print (round(bmi, 3))
     if bmi < 18.5:
         print("Underweight")
+        return -1
     elif 18.5 <= bmi <= 25.0:
         print("Normal Weight")
+        return 0
     elif bmi > 25.0:
         print("Over Weight")
-calculate_bmi(weight=57, height=1.73)
+        return 1
+
+print ('Enter your height: ')
+height = float(input())
+print("Enter your weight: ")
+weight = float(input())
+result = calculate_bmi(height, weight)
+print(result)
 
 
